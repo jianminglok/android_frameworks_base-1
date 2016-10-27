@@ -77,7 +77,15 @@ public interface RILConstants {
     int SIM_SAP_MSG_SIZE_TOO_SMALL = 34;
     int SIM_SAP_CONNECT_OK_CALL_ONGOING = 35;
     int LCE_NOT_SUPPORTED = 36;               /* Link Capacity Estimation (LCE) not supported */
-
+    // MTK
+    // int INVALID_PARAMETER = 37;
+    int EXTERNAL_APP_CAUSE_BEGIN = 2000;
+    int BT_SAP_UNDEFINED = 2001;    /*Used in Connect, Disconnect, Reset, Power on when reset fails with no reason. */
+    int BT_SAP_NOT_ACCESSIBLE = 2002;  /*Used in APDU when SIM card can't perform any commands anymore*/
+    int BT_SAP_CARD_REMOVED = 2003; /*Used in Connect, Reset, Power on when reset fails because SIM card doesn't exist*/
+    int INVALID_PARAMETER = 2004;
+    /// M: ALPS02147333 call control part
+    int CC_CALL_HOLD_FAILED_CAUSED_BY_TERMINATED = 6000;
 
     /* NETWORK_MODE_* See ril.h RIL_REQUEST_SET_PREFERRED_NETWORK_TYPE */
     int NETWORK_MODE_WCDMA_PREF     = 0; /* GSM/WCDMA (WCDMA preferred) */
