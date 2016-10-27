@@ -114,7 +114,15 @@ public class DctConstants {
     public static final int APN_CBS_ID = 7;
     public static final int APN_IA_ID = 8;
     public static final int APN_EMERGENCY_ID = 9;
-    public static final int APN_NUM_TYPES = 10;
+    // MTK
+    public static final int APN_DM_ID = 10;
+    public static final int APN_WAP_ID = 11;
+    public static final int APN_NET_ID = 12;
+    public static final int APN_CMMAIL_ID = 13;
+    public static final int APN_RCSE_ID = 14;
+    public static final int APN_XCAP_ID = 15;
+    public static final int APN_RCS_ID = 16;
+    public static final int APN_NUM_TYPES = APN_RCS_ID + 1;
 
     public static final int INVALID = -1;
     public static final int DISABLED = 0;
